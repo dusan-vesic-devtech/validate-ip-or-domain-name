@@ -1,11 +1,8 @@
 const expect = require('chai').expect
 const validateIpOrDomain = require('../validateIpOrDomain').validateIpOrDomain
-// const foo = require('../validateIpOrDomain').foo
 
 describe('#validateIpOrDomain()', function () {
   it('should return boolean', function () {
-    // validateIpOrDomain('192.168.1.1').to.be.a(boolean);
-    // expect(foo()).to.be.a('boolean');
     expect(validateIpOrDomain('192.168.1.1')).to.be.a('boolean');
     expect(validateIpOrDomain('a.b.c.d')).to.be.a('boolean');
   });
