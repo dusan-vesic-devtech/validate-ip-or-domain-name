@@ -29,4 +29,8 @@ describe('#validateIpOrDomain()', function () {
   it('should return true for special case 1', function() {
     expect(validateIpOrDomain('https://gist.github.com/dperini/729294')).to.equal(true);
   })
+
+  it('should return true for special case 2', function() {
+    expect(validateIpOrDomain('a.b.c.d')).to.equal(false);
+  })
 });
